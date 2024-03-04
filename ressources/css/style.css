@@ -101,7 +101,23 @@
         padding: 1rem 2rem;
     }
 }
-  
+
+.button-3 {
+  background-color: blue;
+  border: 0 solid #e2e8f0;
+  box-sizing: border-box;
+  color: black;
+  display: inline-block;
+  font-family: "code-saver", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+}
+ 
   
   /* header */
   
@@ -219,7 +235,7 @@
   
     #main {
       width: 100%;
-      height: 100vh;
+      height: auto;
       padding: 2rem 1rem;
     
       background-color: white;
@@ -228,17 +244,17 @@
     #bio {
         width: 100%;
         height: auto;
-        margin-bottom: 2rem;
+        m argin-bottom: 5rem;
     }
 
     #bio p {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     #socials {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 
     #socials button {
@@ -303,30 +319,28 @@
   
     #main {
       width: 100%;
-      height: 100vh;
+      height: auto;
       padding: 2rem 5%;
     
       display: flex;
       justify-content: center;
 
-      background-color: white;
+      b ackground-color: red;
     }
 
     #bio {
         width: 30%;
         height: auto;
-
-        b ackground-color: yellow;
+        b ackground-color: red;
     }
 
     #bio p {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     #socials {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
     }
 
     #socials button {
@@ -335,10 +349,9 @@
 
     #blog {
         width: 50%;
-        height: auto;
+        height: fit-content;
         margin-left: 2rem;
         padding-left: 2rem;
-        b order-left: 4px dotted black;
 
         b ackground-color: red;
     }
@@ -351,7 +364,6 @@
         border: 2px solid black;
 
         width: 100%;
-        height: auto;
     }
 
     .blog-entry-txt {
@@ -369,7 +381,8 @@
     }
 
     .blog-img {
-        b ackground-color: blue;
+        b ackground-color: yellow;
+        padding: 2rem 1.5rem 1.5rem 0;
     }
 
     .blog-img img {
@@ -387,4 +400,10 @@
     }
   
   }
-  
+
+  /* footer */
+
+footer {
+  width: 100%;
+  padding: 1rem 5% 1rem;
+}
