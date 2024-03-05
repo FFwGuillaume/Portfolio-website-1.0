@@ -12,8 +12,8 @@ h1 {
   font-weight: 700;
   font-style: normal;
   color: black;
-  font-size: 4rem;
-  line-height: 3.5rem;
+  font-size: 3.75rem;
+  line-height: 3.3rem;
 }
 
 p {
@@ -62,8 +62,8 @@ a {
 
 @ media (min-width: 1000px) {
   .button {
-      font-size: 1.125rem;
-      padding: 1rem 2rem;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -97,25 +97,25 @@ a {
 
 @ media (min-width: 1000px) {
   .button-2 {
-      font-size: 1.125rem;
-      padding: 1rem 2rem;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
   }
 }
 
 .button-3 {
-background-color: blue;
-border: 0 solid #e2e8f0;
-box-sizing: border-box;
-color: black;
-display: inline-block;
-font-family: "code-saver", sans-serif;
-font-size: 1.5rem;
-font-weight: 400;
-line-height: 1;
-padding: 1rem 1.6rem;
-text-align: center;
-text-decoration: none #0d172a solid;
-text-decoration-thickness: auto;
+  background-color: blue;
+  border: 0 solid #e2e8f0;
+  box-sizing: border-box;
+  color: black;
+  display: inline-block;
+  font-family: "code-saver", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
 }
 
 #picture {
@@ -123,13 +123,17 @@ text-decoration-thickness: auto;
   width: 3.5rem;
   background-image: url(../images/PORTRAIT.jpg);
   background-size: cover;
-    background-position: center;
-    height: 3.5rem;
+  background-position: center;
+  height: 3.5rem;
   border-radius: 50%;
 }
 
 
 /* header */
+
+#logo {
+  margin: 0 1rem 1rem 0;
+}
 
 #eye-up {
   width: 300px;
@@ -138,9 +142,9 @@ text-decoration-thickness: auto;
 }
 
 #eye-down {
-width: 300px;
-height: 150px;
-background-image: url(../images/FFWG_EYES_DOWN.svg);
+  width: 300px;
+  height: 150px;
+  background-image: url(../images/FFWG_EYES_DOWN.svg);
 }
 
 #eye-up .pupil {
@@ -155,7 +159,6 @@ background-image: url(../images/FFWG_EYES_DOWN.svg);
   background-color: black;
 }
 
-
 #eye-down .pupil {
   width: 70px;
   height: 70px;
@@ -169,29 +172,17 @@ background-image: url(../images/FFWG_EYES_DOWN.svg);
 }
 
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1000px) {
 
   header {
     width: 100%;
     height: 100vh;
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
 
     display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 
     background-color: blue;
   }
@@ -200,19 +191,13 @@ background-image: url(../images/FFWG_EYES_DOWN.svg);
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
-    
+
     display: grid;
     justify-content: center;
-    a lign-items: center;
-
-    b ackground-color: yellow;
   }
 
   #title-box {
     width: 300px;
-    margin: 1rem;
-
-    b ackground-color: white;
   }
 
 }
@@ -237,19 +222,19 @@ background-image: url(../images/FFWG_EYES_DOWN.svg);
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
-    
+
     display: flex;
     justify-content: center;
   }
 
   #title-box {
     width: 300px;
-    margin: 1rem;
+    m argin: 1rem;
 
     display: flex;
     align-items: center;
   }
-  
+
 }
 
 
@@ -268,165 +253,148 @@ background-image: url(../images/FFWG_EYES_DOWN.svg);
   #main {
     width: 100%;
     height: auto;
-    padding: 2rem 2rem;
-  
-    background-color: white;
+    padding: 2rem 2rem 1rem;
   }
 
   #bio {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
   }
 
   #bio p {
-      margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   #socials {
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
   }
 
   #socials button {
-  margin: 0 0.3rem 0.3rem 0;
+    margin: 0 0.3rem 0.3rem 0;
   }
 
 
   #blog {
-      width: 100%;
-      height: auto;
-
-      b ackground-color: red;
+    width: 100%;
+    height: auto;
   }
 
   .blog-entry {
-      display: flex;
-      flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
 
-      padding: 1.5rem;
-      margin-top: 1rem;
-      border: 2px solid black;
-      b ackground-color: #D8D9D7;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 2px solid black;
   }
 
   .blog-entry-txt {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
 
-      padding: 1.5rem;
-      margin-top: 1rem;
-      border: 2px solid black;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 2px solid black;
   }
 
   .blog-text {
-      padding-top: 0.5rem;
-      b ackground-color: yellow;
+    padding-top: 0.5rem;
   }
 
   .blog-img img {
-      width: 100%;
-      height: auto;
-      b ackground-color: blue;
+    width: 100%;
+    height: auto;
   }
 
   .description {
-      font-size: 1rem;
-      margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
 
   .description a {
-      font-size: 1rem;
-      margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
-
-
 }
+
 
 @media only screen and (min-width: 1001px) {
 
   #main {
     width: 100%;
     height: auto;
-    padding: 2rem 5%;
-  
+    padding: 2rem 5% 1rem;
+
     display: flex;
     justify-content: center;
-
-    b ackground-color: red;
   }
 
   #bio {
-      width: 30%;
-      height: auto;
+    width: 30%;
+    height: auto;
   }
 
   #bio p {
-      margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   #socials {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #socials button {
-  margin: 0 0.3rem 0.3rem 0;
+    margin: 0 0.3rem 0.3rem 0;
   }
 
   #blog {
-      width: 50%;
-      height: fit-content;
-      margin-left: 2rem;
-      padding-left: 2rem;
-
-      b ackground-color: red;
+    width: 50%;
+    height: fit-content;
+    margin-left: 2rem;
+    padding-left: 2rem;
   }
 
   .blog-entry {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      margin-top: 1rem;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 1rem;
 
-      border: 2px solid black;
-
-      width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 
   .blog-entry-txt {
-      margin-top: 1rem;
-
-      border: 2px solid black;
-
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-top: 1rem;
   }
 
   .blog-text {
-      padding: 1.5rem;
-      b ackground-color: yellow;
+    padding: 1.5rem;
   }
 
   .blog-img {
-      b ackground-color: yellow;
-      padding: 2rem 1.5rem 1.5rem 0;
+    padding: 2rem 1.5rem 1.5rem 0;
   }
 
   .blog-img img {
-      width: 100%;
+    width: 100%;
   }
 
   .description {
-      font-size: 1rem;
-      margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
 
   .description a {
-      font-size: 1rem;
-      margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 1rem;
   }
 
 }
@@ -434,6 +402,21 @@ background-image: url(../images/FFWG_EYES_DOWN.svg);
 /* footer */
 
 footer {
-width: 100%;
-padding: 1rem 5% 1rem;
+  width: 100%;
+  padding: 0 2rem 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+
+  footer p {
+    font-size: 0.7rem;
+    padding-top: 1rem;
+  }
 }

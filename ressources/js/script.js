@@ -1,5 +1,3 @@
-// code for smooth scrolling
-
 document.addEventListener('DOMContentLoaded', function () {
     // code for smooth scrolling
     document.querySelector('a[href="#main"]').addEventListener('click', function (e) {
@@ -10,28 +8,28 @@ document.addEventListener('DOMContentLoaded', function () {
             behavior: 'smooth'
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
     const pupils = document.querySelectorAll(".pupil");
     const header = document.querySelector("header");
 
     function movePupils(e) {
+        const { pageX, pageY } = e;
+        const { innerWidth, innerHeight } = window;
+        const x = (pageX - (innerWidth / 2)) / 30;
+        const y = (pageY - (innerHeight / 2)) / 30;
+
         pupils.forEach((pupil) => {
-            const rect = pupil.getBoundingClientRect();
-            const x = (e.pageX - rect.left) / 30;
-            const y = (e.pageY - rect.top) / 30;
             const transformX = x + "px";
             const transformY = y + "px";
             pupil.style.transform = "translate3d(" + transformX + "," + transformY + ", 0px)";
         });
     }
 
-    function startPupils() {
+    function startPupilsDesktop() {
         window.addEventListener("mousemove", movePupils);
     }
 
-    function stopPupils() {
+    function stopPupilsDesktop() {
         pupils.forEach((pupil) => {
             pupil.style.transition = "transform 0.3s ease-out";
             pupil.style.transform = "translate3d(0, 0, 0)";
@@ -39,6 +37,26 @@ document.addEventListener('DOMContentLoaded', function() {
         window.removeEventListener("mousemove", movePupils);
     }
 
-    header.addEventListener("mouseenter", startPupils);
-    header.addEventListener("mouseleave", stopPupils);
+    function startPupilsMobile() {
+        window.addEventListener("deviceorientation", movePupils);
+    }
+
+    function stopPupilsMobile() {
+        pupils.forEach((pupil) => {
+            pupil.style.transition = "transform 0.3s ease-out";
+            pupil.style.transform = "translate3d(0, 0, 0)";
+        });
+        window.removeEventListener("deviceorientation", movePupils);
+    }
+
+    header.addEventListener("mouseenter", startPupilsDesktop);
+    header.addEventListener("mouseleave", stopPupilsDesktop);
+
+    // Check if the device is a mobile device
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+        header.removeEventListener("mouseenter", startPupilsDesktop);
+        header.removeEventListener("mouseleave", stopPupilsDesktop);
+        header.addEventListener("touchstart", startPupilsMobile);
+        header.addEventListener("touchend", stopPupilsMobile);
+    }
 });
