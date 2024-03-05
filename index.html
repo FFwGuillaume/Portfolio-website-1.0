@@ -16,7 +16,12 @@
     <header>
         <div class="top-box">
             <div id="logo">
-                <img src="./ressources/images/FFWG_EYES.svg" alt="eyes-logo">
+                <div id="eye-up">
+                    <div class="pupil"></div>
+                </div>
+                <div id="eye-down">
+                    <div class="pupil"></div>
+                </div>
             </div>
             <div id="title-box">
                 <div id="title">
@@ -34,11 +39,11 @@
 
     <section id="main">
         <div id="bio">
-            <p>
-                My name is Guillaume Kashima. I'm a French illustrator living in Berlin. I started my career as a
-                graphic designer in advertising but later moved on to illustration. From this experience, I kept a
-                direct and minimal approach of images as a vector of communication.
-            </p>
+            <p>My name is Guillaume Kashima. I’m a French illustrator living in Berlin.</p>
+            <p>With the current economic challenges in Europe and the emergence of prompt-to-image technology, I'm
+                transitioning into web development to leverage my design expertise and creative background in this new
+                domain.</p>
+            <p>It’s a new challenge, but I'm excited to embrace it.</p>
 
             <div id="socials">
                 <button class="button-3" role="button">social media</button>
@@ -58,7 +63,11 @@
 
                 <button class="button-3" role="button">contact</button>
 
-                <a href="mailto:guillaumekashima@gmail.com">
+                <a href="mailto:guillaumekashima@gmail.com?subject=Hey,%20Stranger">
+                    <div id="picture"></div>
+                </a>
+
+                <a href="mailto:guillaumekashima@gmail.com?subject=About%20your%20Portfolio%20website">
                     <button class="button-2" role="button">email</button>
                 </a>
             </div>
@@ -66,6 +75,22 @@
 
         <div id="blog">
             <p>Wordpress blog entries:</p>
+            <div class="blog-entry-txt">
+                <div class="blog-text">
+                    <p>05/03/24
+                        <a href="https://guillaumekashima793f99416f.wordpress.com/2024/03/05/reflections-on-technology-from-mouse-tracking-eyes-to-shifting-perspectives/"
+                            target="_blank">Reflections on Technology: From Mouse-Tracking Eyes to Shifting
+                            Perspectives</a>
+                    </p>
+                    <p class="description">The coder achieved mouse-tracking eye movement using code found on a blog,
+                        later refining it with AI assistance. Despite feeling obsolete due to AI, they're embracing a
+                        shift from illustration to web development.</p>
+                    <p class="description">
+                        <a href="https://guillaumekashima793f99416f.wordpress.com/2024/03/05/reflections-on-technology-from-mouse-tracking-eyes-to-shifting-perspectives/"
+                            target="_blank">Read the entry</a>
+                    </p>
+                </div>
+            </div>
             <div class="blog-entry-txt">
                 <div class="blog-text">
                     <p>03/03/24
@@ -130,7 +155,7 @@
                         <a href="https://guillaumekashima793f99416f.wordpress.com/2024/02/28/portfolio-website-for-codecademy-day1/"
                             target="_blank">Read the entry</a>
                 </div>
-        </div>
+            </div>
     </section>
     <footer>
         <p class="description"> ©_Guillaume Kashima_2024</p>
